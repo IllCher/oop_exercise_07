@@ -1,0 +1,6 @@
+add o 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+rmv 0
+undo
+save
+prt
+ext
