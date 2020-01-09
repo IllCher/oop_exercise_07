@@ -1,5 +1,19 @@
-+ o 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-+ q 0 0 -1 -1
-+ t 0 0 0 1 1 0
-+ q -1 -1 2 2
+crt buf.txt
+prt
+add q 0 0 1 1 0 1 1 0
+add o 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+add t 0 0 0 1 1 1
+prt
+save
+rmv 0
+rmv 1
+rmv 0
+undo
+undo
+add q 2 2 3 3
+undo
+undo
+prt
+undo
+prt
 ext

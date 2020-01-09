@@ -6,6 +6,7 @@
 struct figure {
     virtual point center() const = 0;
     virtual std::ostream& print(std::ostream& os) const = 0;
+    virtual std::ostream& print_file(std::ostream& os) const = 0;
     virtual double square() const = 0;
     virtual ~figure() {}
 };

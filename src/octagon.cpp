@@ -12,5 +12,7 @@ point octagon::center() const {
 }
 std::ostream& octagon::print(std::ostream& os) const {
     os << _a <<  _b << _c <<  _d << _e <<  _f << _g <<  _h << std::endl;
-    return os;
+}
+std::ostream& octagon::print_file(std::ostream& os) const {
+    os << "o\n" << _a <<  _b << _c <<  _d << _e <<  _f << _g <<  _h << std::endl;
 }

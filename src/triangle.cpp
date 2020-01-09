@@ -27,5 +27,8 @@ point triangle::center() const {
 }
 std::ostream& triangle::print(std::ostream& os) const {
     os << _a  <<  _b  << _c << std::endl;
-    return os;
+}
+
+std::ostream& triangle::print_file(std::ostream& os) const {
+    os << "t\n" << _a  << _b << _c << std::endl;
 }

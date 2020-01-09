@@ -1,0 +1,7 @@
+crt buf.txt
+add q 0 0 1 1 0 1 0 1
+prt
+save
+undo
+load buf.txt
+prt

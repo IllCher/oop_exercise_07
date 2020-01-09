@@ -8,7 +8,8 @@ public:
     octagon(std::istream& is);
     double square() const override;
     point center() const override;
-    std::ostream& print(std::ostream&) const override;
+    std::ostream& print(std::ostream& os) const override;
+    std::ostream& print_file(std::ostream& os) const override;
 private:
     point _a;
     point _b;

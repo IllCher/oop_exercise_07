@@ -1,16 +1,13 @@
 #include "document.h"
 
 void document::prt() const {
-    {
         if (buf.empty()) {
             std::cout << "Buffer is empty\n";
         }
         for (auto elem : buf) {
             elem->print(std::cout);
         }
-    }
 }
-
 void document::insert(std::shared_ptr<figure> &ptr) {
     buf.push_back(ptr);
 }
@@ -27,7 +24,7 @@ void document::save(const std::string &filename) const {
     }
     fout << buf.size() << '\n';
     for (auto elem : buf) {
-        elem->print(fout);
+        elem->print_file(fout);
     }
 }
 

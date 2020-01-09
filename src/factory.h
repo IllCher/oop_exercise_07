@@ -8,7 +8,8 @@
 #include <string>
 
 struct factory {
-    std::shared_ptr<figure> new_figure(std::istream& is);
+    std::shared_ptr<figure> new_figure(std::istream &is);
+    std::shared_ptr<figure> new_figure_file(std::istream &is);
 };
 
 #endif

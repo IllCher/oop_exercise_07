@@ -1,4 +1,3 @@
-
 #ifndef OOP7_EDITOR_H
 #define OOP7_EDITOR_H
 #include "figure.h"

@@ -2,16 +2,17 @@
 #ifndef OOP_EXERCISE_03_TRIANGLE_H
 #define OOP_EXERCISE_03_TRIANGLE_H
 
-#include "../../oop_exercise_08/figure.h"
+#include "figure.h"
 
 class triangle : public figure {
 public:
     triangle();
     triangle(const point& a, const point& b, const point& c);
-    triangle(std::istream& is) ;
+    triangle(std::istream& is);
     double square() const override;
     point center() const override;
     std::ostream& print(std::ostream& os) const override;
+    std::ostream& print_file(std::ostream& os) const override;
 
 private:
     point _a;
